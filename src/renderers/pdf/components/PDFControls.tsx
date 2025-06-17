@@ -39,7 +39,7 @@ const PDFControls: FC = () => {
           id="pdf-print"
           // href={currentDocument?.fileData as string}
           // print={currentDocument?.fileName || currentDocument?.uri}
-          title={t("printButtonLabel")}
+          title={t('downloadButtonLabel')}
           onMouseDown={() => printPdf(currentDocument?.fileData as string)}
         >
           <PrintPDFIcon/>

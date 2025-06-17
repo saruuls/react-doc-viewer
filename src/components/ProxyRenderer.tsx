@@ -26,6 +26,7 @@ type ContentsProps = {
       | "noRendererMessage"
       | "documentNavInfo"
       | "downloadButtonLabel"
+      | "printButtonLabel"
       | "brokenFile"
       | "msgPluginRecipients"
       | "msgPluginSender"

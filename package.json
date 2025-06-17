@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "storybook dev -p 6006",
-    "build": "rm -rf dist && tsc && vite build",
+    "build": "tsc && vite build",
     "test": "vitest run",
     "lint": "eslint ./src --ext .ts,.tsx",
     "prettier:check": "prettier --check .",

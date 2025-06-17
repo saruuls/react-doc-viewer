@@ -2,6 +2,7 @@
   "documentNavInfo": "Документ {{ currentFileNo }} из {{ allFilesCount }}",
   "noRendererMessage": "Данный тип файла не поддерживается рендером: {{{ fileType }}}",
   "downloadButtonLabel": "Скачать файл",
+  "printButtonLabel": "Print file",
   "brokenFile": "Ваш файл сломан. Пожалуйста, проверьте его на своём комьютере.",
   "msgPluginRecipients": "Получатели",
   "msgPluginSender": "Отправитель",

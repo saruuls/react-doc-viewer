@@ -2,6 +2,7 @@
   "documentNavInfo": "Dokument {{ currentFileNo }} av {{ allFilesCount }}",
   "noRendererMessage": "Ingen renderare för filtypen: {{{ fileType }}}",
   "downloadButtonLabel": "Ladda ner",
+  "printButtonLabel": "Print file",
   "brokenFile": "Filen är trasig. Var vänlig kontrollera den på din maskin.",
   "msgPluginRecipients": "Mottagare",
   "msgPluginSender": "Avsändare",

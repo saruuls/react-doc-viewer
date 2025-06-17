@@ -14,6 +14,7 @@ export const setZoomLevel = (value: number): SetZoomLevel => ({
 
 
 export const printPdf = (value: any) => {
+  // @ts-ignore
   window.open(value).print();
 };
 

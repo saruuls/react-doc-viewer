@@ -20,7 +20,7 @@ File viewer for **React v17+**.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of Contents
+'##
 
 - [Supported file types](#supported-file-types)
 - [Storybook Demo](#storybook-demo)

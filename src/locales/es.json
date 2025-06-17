@@ -2,6 +2,7 @@
   "documentNavInfo": "Documento {{ currentFileNo }} de {{ allFilesCount }}",
   "noRendererMessage": "No hay procesador para el tipo de archivo: {{{ fileType }}}",
   "downloadButtonLabel": "Descargar archivo",
+  "printButtonLabel": "Print file",
   "brokenFile": "Tu archivo está roto. Compruébalo en tu máquina.",
   "msgPluginRecipients": "Destinatarios",
   "msgPluginSender": "Remitente",

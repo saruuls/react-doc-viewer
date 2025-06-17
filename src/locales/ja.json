@@ -2,6 +2,7 @@
   "documentNavInfo": "ファイル {{ currentFileNo }} / {{ allFilesCount }}",
   "noRendererMessage": "ファイルタイプに対応したレンダラーはありません: {{ fileType }}",
   "downloadButtonLabel": "ダウンロード",
+  "printButtonLabel": "Print file",
   "brokenFile": "ファイルが壊れています。あなたのマシンでファイルを確認してください。",
   "msgPluginRecipients": "受信者",
   "msgPluginSender": "送信者",

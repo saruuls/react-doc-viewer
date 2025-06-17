@@ -2,6 +2,7 @@
   "documentNavInfo": "Documento {{ currentFileNo }} de {{ allFilesCount }}",
   "noRendererMessage": "Nenhum renderizador para o tipo de arquivo: {{{ fileType }}}",
   "downloadButtonLabel": "Baixar arquivo",
+  "printButtonLabel": "Print file",
   "brokenFile": "Seu arquivo está quebrado. Por favor, verifique-o em sua máquina.",
   "msgPluginRecipients": "Destinatários",
   "msgPluginSender": "Remetente",

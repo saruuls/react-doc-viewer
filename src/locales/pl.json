@@ -2,6 +2,7 @@
   "documentNavInfo": "Dokument {{ currentFileNo }} z {{ allFilesCount }}",
   "noRendererMessage": "Brak funckji renderującej dla: {{{ fileType }}}",
   "downloadButtonLabel": "Pobierz plik",
+  "printButtonLabel": "Print file",
   "brokenFile": "Twój plik jest uszkodzony. Sprawdź go na swoim komputerze.",
   "msgPluginRecipients": "Odbiorcy",
   "msgPluginSender": "Nadawca",
