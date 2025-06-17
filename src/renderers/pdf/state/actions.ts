@@ -12,6 +12,11 @@ export const setZoomLevel = (value: number): SetZoomLevel => ({
   value,
 });
 
+
+export const printPdf = (value: any) => {
+  window.open(value).print();
+};
+
 export const SET_PDF_PAGINATED: string = "SET_PDF_PAGINATED";
 
 export interface SetPDFPaginated {

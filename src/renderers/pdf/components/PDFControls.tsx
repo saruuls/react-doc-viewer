@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Button, LinkButton } from "../../../components/common";
 import { IStyledProps } from "../../..";
 import { PDFContext } from "../state";
-import { setPDFPaginated, setZoomLevel } from "../state/actions";
+import { printPdf, setPDFPaginated, setZoomLevel } from "../state/actions";
 import { useTranslation } from "../../../hooks/useTranslation";
 import {
-  DownloadPDFIcon,
+  DownloadPDFIcon, PrintPDFIcon,
   ResetZoomPDFIcon,
   TogglePaginationPDFIcon,
   ZoomInPDFIcon,
@@ -33,6 +33,18 @@ const PDFControls: FC = () => {
   return (
     <Container id="pdf-controls">
       {paginated && numPages > 1 && <PDFPagination />}
+
+      {currentDocument?.fileData && (
+        <PrintButton
+          id="pdf-print"
+          // href={currentDocument?.fileData as string}
+          // print={currentDocument?.fileName || currentDocument?.uri}
+          title={t("printButtonLabel")}
+          onMouseDown={() => printPdf(currentDocument?.fileData as string)}
+        >
+          <PrintPDFIcon/>
+        </PrintButton>
+      )}
 
       {currentDocument?.fileData && (
         <DownloadButton
@@ -86,31 +98,40 @@ const PDFControls: FC = () => {
 export default PDFControls;
 
 const Container = styled.div`
-  display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  justify-content: flex-end;
-  padding: 8px;
-  background-color: ${(props: IStyledProps) => props.theme.tertiary};
-  box-shadow: 0px 2px 3px #00000033;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: flex-end;
+    padding: 8px;
+    background-color: ${(props: IStyledProps) => props.theme.tertiary};
+    box-shadow: 0px 2px 3px #00000033;
 
-  @media (max-width: 768px) {
-    padding: 6px;
-  }
+    @media (max-width: 768px) {
+        padding: 6px;
+    }
 `;
 
 const ControlButton = styled(Button)`
-  width: 30px;
-  height: 30px;
-  @media (max-width: 768px) {
-    width: 25px;
-    height: 25px;
-  }
+    width: 30px;
+    height: 30px;
+    @media (max-width: 768px) {
+        width: 25px;
+        height: 25px;
+    }
 `;
 
 const DownloadButton = styled(LinkButton)`
+    width: 30px;
+    height: 30px;
+    @media (max-width: 768px) {
+        width: 25px;
+        height: 25px;
+    }
+`;
+
+const PrintButton = styled(LinkButton)`
   width: 30px;
   height: 30px;
   @media (max-width: 768px) {
